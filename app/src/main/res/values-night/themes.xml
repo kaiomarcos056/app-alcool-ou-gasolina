@@ -2,21 +2,48 @@
     <!-- Base application theme. -->
     <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#054047</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">#434242</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">#FFFFFF</item>
         <item name="colorPrimaryDark">#054047</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#CB584C</item>
+        <item name="colorSecondary">#FFF</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">#054047</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:textColorPrimary">#FFFFFF</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColorHint">#FFFFFF</item>
-        <item name="android:backgroundTint">#054047</item>
     </style>
+
+    <style name="BACKGROUND">
+        <item name="android:backgroundTint">#434242</item>
+    </style>
+
+    <style name="CONTENT">
+        <item name="android:background">@drawable/contentradius</item>
+        <item name="android:backgroundTint">#3F51B5</item>
+    </style>
+
+    <style name="TEXTCOLOR">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="BTNCALC">
+        <item name="android:background">#479BDB</item>
+        <item name="android:backgroundTint">#479BDB</item>
+        <item name="android:textColorLink">#479BDB</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="BTNSWITCH">
+        <item name="android:background">#479BDB</item>
+        <item name="android:backgroundTint">#479BDB</item>
+        <item name="android:textColorLink">#479BDB</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
 </resources>

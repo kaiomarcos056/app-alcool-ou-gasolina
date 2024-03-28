@@ -2,18 +2,38 @@
     <!-- Base application theme. -->
     <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#CB584C</item>
+        <item name="colorPrimary">#3F51B5</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">#363739</item>
         <item name="colorPrimaryDark">#1F1F1F</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#B85045</item>
+        <item name="colorSecondary">#3F51B5</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">#479BDB</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:textColorPrimary">@color/black</item>
-        <item name="android:textColorHint">@color/black</item>
-        <item name="android:backgroundTint">@color/white</item>
     </style>
+
+    <style name="BACKGROUND">
+        <item name="android:backgroundTint">#479BDB</item>
+    </style>
+
+    <style name="CONTENT">
+        <item name="android:background">@drawable/contentradius</item>
+        <item name="android:backgroundTint">#FFF</item>
+    </style>
+
+    <style name="TEXTCOLOR">
+        <item name="android:textColor">#000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="BTNCALC">
+        <item name="android:background">#479BDB</item>
+        <item name="android:backgroundTint">#479BDB</item>
+        <item name="android:textColorLink">#479BDB</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
 </resources>
