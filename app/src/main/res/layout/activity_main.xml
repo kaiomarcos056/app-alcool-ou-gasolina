@@ -10,10 +10,12 @@
 
     <LinearLayout
         style="@style/CONTENT"
-        android:layout_width="300dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:minWidth="300dp"
+        android:minHeight="600dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,6 +52,7 @@
             android:textStyle="bold" />
 
         <EditText
+            style="@style/INPTEXTCOLOR"
             android:id="@+id/edAlcool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,7 +60,9 @@
             android:ems="10"
             android:hint="álcool"
             android:inputType="numberDecimal"
-            android:padding="10dp" />
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
@@ -71,6 +76,7 @@
             android:textStyle="bold" />
 
         <EditText
+            style="@style/INPTEXTCOLOR"
             android:id="@+id/edGasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +84,10 @@
             android:ems="10"
             android:hint="gasolina"
             android:inputType="numberDecimal"
-            android:padding="10dp" />
+            android:minHeight="48dp"
+            android:padding="10dp"
+
+            android:textStyle="bold" />
 
         <Switch
             android:id="@+id/swPercentual"
@@ -87,10 +96,11 @@
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="10dp"
+            android:height="48dp"
             android:paddingLeft="20dp"
             android:text="@string/_75"
             android:textAlignment="textStart"
-            android:textColorLink="#FAF6F6"
+            android:textColorLink="#000"
             android:textStyle="bold" />
 
         <Button
