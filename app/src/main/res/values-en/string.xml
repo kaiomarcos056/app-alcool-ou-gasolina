@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">With what fuel?</string>
+    <string name="_75">75%</string>
+
+    <string name="titulo">Gasoline or Ethanol?</string>
+
+    <string name="precoAlcool">Ethanol Price:</string>
+    <string name="palcool">Ethanol</string>
+
+    <string name="precoGasolina">Gasoline Price:</string>
+    <string name="pgasolina">Gasoline</string>
+
+    <string name="calcular">CALCULATE</string>
+
+    <string name="resultado">I still don\'t know which is best.</string>
+</resources>

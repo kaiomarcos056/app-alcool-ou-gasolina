@@ -11,33 +11,38 @@
     <LinearLayout
         style="@style/CONTENT"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         android:minWidth="300dp"
         android:minHeight="600dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="152dp"
-            android:padding="30dp"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginTop="@dimen/image_margin_top"
+            android:padding="15dp"
             app:srcCompat="@drawable/abastece" />
 
         <TextView
             android:id="@+id/titulo"
             style="@style/TEXTCOLOR"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Gasolina ou Álcool?"
+            android:text="@string/titulo"
             android:textAlignment="center"
-            android:textSize="25sp"
+            android:textSize="@dimen/text_size_extra_large"
             android:textStyle="bold" />
 
         <TextView
@@ -48,20 +53,22 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins"
-            android:text="Preço Álcool:"
+            android:textSize="@dimen/text_size_medium"
+            android:text="@string/precoAlcool"
             android:textStyle="bold" />
 
         <EditText
-            style="@style/INPTEXTCOLOR"
             android:id="@+id/edAlcool"
+            style="@style/INPTEXTCOLOR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="álcool"
+            android:text="@string/palcool"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             android:padding="10dp"
+            android:textSize="@dimen/text_size_large"
             android:textStyle="bold" />
 
         <TextView
@@ -70,22 +77,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="25dp"
             android:fontFamily="@font/poppins"
-            android:text="Preço Gasolina:"
+            android:textSize="@dimen/text_size_medium"
+            android:text="@string/precoGasolina"
             android:textStyle="bold" />
 
         <EditText
-            style="@style/INPTEXTCOLOR"
             android:id="@+id/edGasolina"
+            style="@style/INPTEXTCOLOR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="gasolina"
+            android:text="@string/pgasolina"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
             android:padding="10dp"
+            android:textSize="@dimen/text_size_large"
 
             android:textStyle="bold" />
 
@@ -96,22 +105,23 @@
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="10dp"
-            android:height="48dp"
             android:paddingLeft="20dp"
             android:text="@string/_75"
             android:textAlignment="textStart"
             android:textColorLink="#000"
+            android:textSize="@dimen/text_size_medium"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btCalcular"
             style="@style/BTNCALC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:textSize="@dimen/button_text_size"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="20dp"
-            android:text="Calcular" />
+            android:text="@string/calcular"/>
 
         <TextView
             android:id="@+id/textMsg"
@@ -119,8 +129,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Ainda não sei qual é a melhor."
-            android:textSize="16sp" />
+            android:text="@string/resultado"
+            android:textSize="@dimen/text_size_medium" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
